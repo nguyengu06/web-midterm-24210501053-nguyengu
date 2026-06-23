@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Giải Đấu - CyberArena</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-dark text-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top border-bottom border-secondary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning fs-4" href="index.html">🎮 CyberArena</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="courses.html">Giải đấu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Đăng ký</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-warning btn-sm text-dark px-3 fw-bold mt-1 mt-lg-0" href="registrations.html">Hồ sơ tuyển thủ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-4">
+        <section class="bg-black p-4 shadow rounded-3 border border-secondary mb-5">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label class="form-label fw-semibold text-warning">Tìm kiếm giải đấu</label>
+                    <input type="text" id="input-search" class="form-control bg-dark text-white border-secondary" placeholder="Nhập tên trò chơi hoặc tên giải đấu...">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <label class="form-label fw-semibold text-warning">Hệ máy thi đấu</label>
+                    <select id="select-category" class="form-select bg-dark text-white border-secondary">
+                        <option value="all">Tất cả thiết bị</option>
+                        <option value="PC">Hệ máy PC</option>
+                        <option value="Mobile">Hệ máy Mobile</option>
+                    </select>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <label class="form-label fw-semibold text-warning">Trình độ</label>
+                    <select id="select-level" class="form-select bg-dark text-white border-secondary">
+                        <option value="all">Tất cả cấp độ</option>
+                        <option value="Cơ bản">Cơ bản (Solo/Fun)</option>
+                        <option value="Nâng cao">Nâng cao (Pro Team)</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <div id="card-container" class="row g-4">
+                </div>
+        </section>
+    </main>
+
+    <div class="modal fade" id="detailModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-secondary bg-gradient text-light border-0 shadow-lg">
+                <div class="modal-header bg-black border-bottom border-secondary">
+                    <h5 class="modal-title fw-bold text-warning" id="modal-title">Tên giải đấu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <img id="modal-image" src="" alt="Thumbnail" class="img-fluid rounded-3 mb-3 w-100 object-fit-cover" style="height: 220px;">
+                    <div class="d-flex gap-2 mb-3">
+                        <span id="modal-category" class="badge bg-warning text-dark px-2 py-1"></span>
+                        <span id="modal-level" class="badge bg-info text-dark px-2 py-1"></span>
+                        <span id="modal-price" class="ms-auto text-danger fw-bold fs-5"></span>
+                    </div>
+                    <p id="modal-description" class="text-light lh-relaxed mb-0"></p>
+                </div>
+                <div class="modal-footer bg-black border-top border-secondary">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal">Đóng lại</button>
+                    <a href="register.html" class="btn btn-sm btn-warning fw-bold">Ghi danh ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
