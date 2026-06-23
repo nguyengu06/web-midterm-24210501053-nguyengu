@@ -1,0 +1,152 @@
+/* --- BIẾN MÀU SẮC ĐẶC TRƯNG --- */
+:root {
+    --bg-main: #060913;       /* Nền tối sâu độc quyền */
+    --bg-card: #0d1224;       /* Nền Card gaming */
+    --neon-purple: #8a2be2;   /* Tím Neon */
+    --neon-pink: #ff007f;     /* Hồng Neon */
+    --neon-yellow: #ffc107;   /* Vàng Cyber */
+    --text-glow: 0 0 10px rgba(255, 193, 7, 0.5);
+}
+
+body {
+    background-color: var(--bg-main) !important;
+    color: #e2e8f0 !important;
+    font-family: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+
+/* --- HIỆU ỨNG GRADIENT TEXT --- */
+.text-cyber-gradient {
+    background: linear-gradient(135deg, var(--neon-yellow), var(--neon-pink), var(--neon-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+/* --- THANH ĐIỀU HƯỚNG GLASSMORPHISM --- */
+.navbar-cyber {
+    background: rgba(6, 9, 19, 0.75) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--neon-yellow);
+    transition: width 0.3s ease;
+}
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
+}
+
+/* --- HERO BANNER SIÊU THỰC --- */
+.hero-cyber {
+    position: relative;
+    background: radial-gradient(circle at top right, rgba(138, 43, 226, 0.15), transparent),
+                radial-gradient(circle at bottom left, rgba(255, 0, 127, 0.1), transparent);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* --- CARD NÂNG CAO CAO CẤP (CYBER CARD) --- */
+.cyber-card {
+    background: var(--bg-card) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 16px !important;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                box-shadow 0.4s ease, 
+                border-color 0.4s ease;
+}
+
+.cyber-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 193, 7, 0.4) !important;
+    box-shadow: 0 12px 30px rgba(138, 43, 226, 0.25),
+                0 0 15px rgba(255, 0, 127, 0.15);
+}
+
+/* Hiệu ứng tia sáng quét ngang khi hover qua Card (Shine Effect) */
+.cyber-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -150%;
+    width: 50%; height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.08), transparent);
+    transform: skewX(-25deg);
+}
+.cyber-card:hover::before {
+    animation: shine 0.75s forwards;
+}
+@keyframes shine {
+    100% { left: 150%; }
+}
+
+.cyber-card img {
+    transition: transform 0.5s ease;
+}
+.cyber-card:hover img {
+    transform: scale(1.06);
+}
+
+/* --- KHUNG VIỀN FORM VÀ BỘ LỌC PHÁT SÁNG --- */
+.cyber-box {
+    background: rgba(13, 18, 36, 0.6) !important;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 16px;
+}
+
+.form-control, .form-select {
+    background-color: rgba(6, 9, 19, 0.8) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    color: #fff !important;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.form-control:focus, .form-select:focus {
+    border-color: var(--neon-yellow) !important;
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.25) !important;
+}
+
+/* --- MODAL GLASSMORPHISM --- */
+.cyber-modal-content {
+    background: rgba(13, 18, 36, 0.85) !important;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 20px;
+}
+
+/* --- CUSTOM TABLE GAMING --- */
+.cyber-table {
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+.cyber-table tr {
+    background-color: rgba(255, 255, 255, 0.02);
+    transition: all 0.2s ease;
+}
+.cyber-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.cyber-table td, .cyber-table th {
+    padding: 14px !important;
+    border: none !important;
+}
+.cyber-table td:first-child, .cyber-table th:first-child { border-radius: 10px 0 0 10px; }
+.cyber-table td:last-child, .cyber-table th:last-child { border-radius: 0 10px 10px 0; }
+
+.table-responsive {
+    max-height: 420px;
+    overflow-y: auto;
+}
