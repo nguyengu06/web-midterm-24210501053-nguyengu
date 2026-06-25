@@ -1,92 +1,225 @@
 <div class="container my-5">
-    <div class="p-4" style="background-color: #1f2833; border: 1px solid #2f3b4c; border-radius: 8px;">
-        <h3 class="text-warning mb-4 fw-bold">🔥 DANH SÁCH ĐỘI TUYỂN ĐÃ GHI DANH</h3>
+    <div class="p-4 shadow-lg" style="background-color: #1f2833; border: 2px solid #dc3545; border-radius: 12px; box-shadow: 0 0 25px rgba(220, 53, 69, 0.25);">
+        
+        <div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-3 border-secondary">
+            <h3 class="text-warning mb-0 fw-bold tracking-wide" style="text-shadow: 0 0 10px rgba(255,193,7,0.3);">
+                🎮 BAN TRỊ SỰ GIẢI ĐẤU: DANH SÁCH ANH HÙNG GHI DANH
+            </h3>
+            <span class="badge bg-danger px-3 py-2 fw-bold animate-pulse">LIVE: 9 ĐỘI</span>
+        </div>
         
         <div class="table-responsive">
-            <table class="table table-dark table-striped table-hover align-middle border-secondary text-center">
-                <thead class="table-danger text-uppercase">
-                    <tr>
-                        <th scope="col">STT</th>
-                        <th scope="col">Tên Đội / Tuyển Thủ</th>
-                        <th scope="col">Tựa Game</th>
-                        <th scope="col">Số Điện Thoại</th>
-                        <th scope="col">Khẩu Hiệu (Slogan)</th>
-                        <th scope="col">Trạng Thái</th>
+            <table class="table table-dark table-hover align-middle text-center mb-0" style="border-collapse: separate; border-spacing: 0 8px;">
+                <thead>
+                    <tr class="text-secondary text-uppercase fs-7 fw-bold" style="border-bottom: 2px solid #313d4f;">
+                        <th scope="col" class="pb-3" style="width: 6%;">STT</th>
+                        <th scope="col" class="pb-3 text-start" style="width: 25%;">Đội Tuyển / Tuyển Thủ</th>
+                        <th scope="col" class="pb-3" style="width: 15%;">Tựa Game</th>
+                        <th scope="col" class="pb-3" style="width: 20%;">Kỹ Năng / Tiến Độ</th>
+                        <th scope="col" class="pb-3" style="width: 20%;">Khẩu Hiệu Trận Đấu</th>
+                        <th scope="col" class="pb-3" style="width: 14%;">Trạng Thái</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td class="fw-bold text-white">Xạ Thủ Cà Mau</td>
-                        <td><span class="badge bg-primary">Liên Quân Mobile</span></td>
-                        <td>0912xxxxxx</td>
-                        <td class="text-secondary italic">"Không thắng không về!"</td>
-                        <td><span class="badge bg-success">Đã Duyệt</span></td>
+                    
+                    <tr style="background-color: #0b0c10; transition: 0.2s;">
+                        <td class="text-danger fw-bold fs-5">01</td>
+                        <td class="text-start">
+                            <div class="d-flex align-items-center">
+                                <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center fw-bold me-3 shadow" style="width: 40px; height: 40px; font-size: 14px; border: 2px solid #ffc107;">XCM</div>
+                                <div>
+                                    <div class="fw-bold text-warning fs-6">Xạ Thủ Cà Mau</div>
+                                    <small class="text-muted">ID: #242101</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="badge bg-primary px-3 py-2 shadow-sm">Liên Quân Mobile</span></td>
+                        <td>
+                            <small class="text-light d-block mb-1 text-start">Sức mạnh: 95%</small>
+                            <div class="progress bg-secondary" style="height: 6px;">
+                                <div class="progress-bar bg-danger shadow-3d" style="width: 95%"></div>
+                            </div>
+                        </td>
+                        <td class="text-light-50 italic">"Không thắng không về!"</td>
+                        <td><span class="badge bg-success text-white px-3 py-2 w-100 border border-success">Đã Duyệt Vòng 1</span></td>
                     </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td class="fw-bold text-white">Viper Esports</td>
-                        <td><span class="badge bg-info text-dark">Valorant</span></td>
-                        <td>0945xxxxxx</td>
-                        <td class="text-secondary italic">"One shot, one kill."</td>
-                        <td><span class="badge bg-success">Đã Duyệt</span></td>
+
+                    <tr style="background-color: #0b0c10; transition: 0.2s;">
+                        <td class="text-danger fw-bold fs-5">02</td>
+                        <td class="text-start">
+                            <div class="d-flex align-items-center">
+                                <div class="rounded-circle bg-info text-dark d-flex align-items-center justify-content-center fw-bold me-3 shadow" style="width: 40px; height: 40px; font-size: 14px; border: 2px solid #fff;">VIP</div>
+                                <div>
+                                    <div class="fw-bold text-warning fs-6">Viper Esports</div>
+                                    <small class="text-muted">ID: #242102</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="badge bg-info text-dark px-3 py-2 shadow-sm">Valorant</span></td>
+                        <td>
+                            <small class="text-light d-block mb-1 text-start">Sức mạnh: 88%</small>
+                            <div class="progress bg-secondary" style="height: 6px;">
+                                <div class="progress-bar bg-info shadow-3d" style="width: 88%"></div>
+                            </div>
+                        </td>
+                        <td class="text-light-50 italic">"One shot, one kill."</td>
+                        <td><span class="badge bg-success text-white px-3 py-2 w-100 border border-success">Đã Duyệt Vòng 1</span></td>
                     </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td class="fw-bold text-white">Ghost Team</td>
-                        <td><span class="badge bg-primary">Liên Quân Mobile</span></td>
-                        <td>0812xxxxxx</td>
-                        <td class="text-secondary italic">"Bật chế độ hủy diệt."</td>
-                        <td><span class="badge bg-warning text-dark">Đang Chờ</span></td>
+
+                    <tr style="background-color: #0b0c10; transition: 0.2s;">
+                        <td class="text-danger fw-bold fs-5">03</td>
+                        <td class="text-start">
+                            <div class="d-flex align-items-center">
+                                <div class="rounded-circle bg-purple text-white d-flex align-items-center justify-content-center fw-bold me-3 shadow" style="width: 40px; height: 40px; font-size: 14px; border: 2px solid #dc3545; background-color: #6f42c1;">GHO</div>
+                                <div>
+                                    <div class="fw-bold text-warning fs-6">Ghost Team</div>
+                                    <small class="text-muted">ID: #242103</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="badge bg-primary px-3 py-2 shadow-sm">Liên Quân Mobile</span></td>
+                        <td>
+                            <small class="text-light d-block mb-1 text-start">Sức mạnh: 70%</small>
+                            <div class="progress bg-secondary" style="height: 6px;">
+                                <div class="progress-bar bg-warning shadow-3d" style="width: 70%"></div>
+                            </div>
+                        </td>
+                        <td class="text-light-50 italic">"Bật chế độ hủy diệt."</td>
+                        <td><span class="badge bg-warning text-dark px-3 py-2 w-100">Đang Hồ Sơ Sơ Tuyển</span></td>
                     </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td class="fw-bold text-white">Bách Phát Bách Trúng</td>
-                        <td><span class="badge bg-danger">Free Fire</span></td>
-                        <td>0939xxxxxx</td>
-                        <td class="text-secondary italic">"Săn lùng Booyah!"</td>
-                        <td><span class="badge bg-success">Đã Duyệt</span></td>
+
+                    <tr style="background-color: #0b0c10; transition: 0.2s;">
+                        <td class="text-danger fw-bold fs-5">04</td>
+                        <td class="text-start">
+                            <div class="d-flex align-items-center">
+                                <div class="rounded-circle bg-warning text-dark d-flex align-items-center justify-content-center fw-bold me-3 shadow" style="width: 40px; height: 40px; font-size: 14px; border: 2px solid #000;">BPT</div>
+                                <div>
+                                    <div class="fw-bold text-warning fs-6">Bách Phát Bách Trúng</div>
+                                    <small class="text-muted">ID: #242104</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="badge bg-danger px-3 py-2 shadow-sm">Free Fire</span></td>
+                        <td>
+                            <small class="text-light d-block mb-1 text-start">Sức mạnh: 82%</small>
+                            <div class="progress bg-secondary" style="height: 6px;">
+                                <div class="progress-bar bg-danger shadow-3d" style="width: 82%"></div>
+                            </div>
+                        </td>
+                        <td class="text-light-50 italic">"Săn lùng Booyah!"</td>
+                        <td><span class="badge bg-success text-white px-3 py-2 w-100 border border-success">Đã Duyệt Vòng 1</span></td>
                     </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td class="fw-bold text-white">King Of Speed</td>
-                        <td><span class="badge bg-info text-dark">Valorant</span></td>
-                        <td>0915xxxxxx</td>
-                        <td class="text-secondary italic">"Tốc độ quyết định chiến thắng."</td>
-                        <td><span class="badge bg-success">Đã Duyệt</span></td>
+
+                    <tr style="background-color: #0b0c10; transition: 0.2s;">
+                        <td class="text-danger fw-bold fs-5">05</td>
+                        <td class="text-start">
+                            <div class="d-flex align-items-center">
+                                <div class="rounded-circle bg-secondary text-white d-flex align-items-center justify-content-center fw-bold me-3 shadow" style="width: 40px; height: 40px; font-size: 14px; border: 2px solid #00c0ff; background-color: #495057;">KOS</div>
+                                <div>
+                                    <div class="fw-bold text-warning fs-6">King Of Speed</div>
+                                    <small class="text-muted">ID: #242105</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="badge bg-info text-dark px-3 py-2 shadow-sm">Valorant</span></td>
+                        <td>
+                            <small class="text-light d-block mb-1 text-start">Sức mạnh: 90%</small>
+                            <div class="progress bg-secondary" style="height: 6px;">
+                                <div class="progress-bar bg-info shadow-3d" style="width: 90%"></div>
+                            </div>
+                        </td>
+                        <td class="text-light-50 italic">"Tốc độ quyết định chiến thắng."</td>
+                        <td><span class="badge bg-success text-white px-3 py-2 w-100 border border-success">Đã Duyệt Vòng 1</span></td>
                     </tr>
-                    <tr>
-                        <th scope="row">6</th>
-                        <td class="fw-bold text-white">Hắc Báo Đấu Trường</td>
-                        <td><span class="badge bg-primary">Liên Quân Mobile</span></td>
-                        <td>0988xxxxxx</td>
-                        <td class="text-secondary italic">"Bản lĩnh và trung thành."</td>
-                        <td><span class="badge bg-success">Đã Duyệt</span></td>
+
+                    <tr style="background-color: #0b0c10; transition: 0.2s;">
+                        <td class="text-danger fw-bold fs-5">06</td>
+                        <td class="text-start">
+                            <div class="d-flex align-items-center">
+                                <div class="rounded-circle bg-dark text-danger d-flex align-items-center justify-content-center fw-bold me-3 shadow" style="width: 40px; height: 40px; font-size: 14px; border: 2px solid #dc3545;">HBD</div>
+                                <div>
+                                    <div class="fw-bold text-warning fs-6">Hắc Báo Đấu Trường</div>
+                                    <small class="text-muted">ID: #242106</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="badge bg-primary px-3 py-2 shadow-sm">Liên Quân Mobile</span></td>
+                        <td>
+                            <small class="text-light d-block mb-1 text-start">Sức mạnh: 79%</small>
+                            <div class="progress bg-secondary" style="height: 6px;">
+                                <div class="progress-bar bg-primary shadow-3d" style="width: 79%"></div>
+                            </div>
+                        </td>
+                        <td class="text-light-50 italic">"Bản lĩnh và trung thành."</td>
+                        <td><span class="badge bg-success text-white px-3 py-2 w-100 border border-success">Đã Duyệt Vòng 1</span></td>
                     </tr>
-                    <tr>
-                        <th scope="row">7</th>
-                        <td class="fw-bold text-white">Phoenix Team</td>
-                        <td><span class="badge bg-danger">Free Fire</span></td>
-                        <td>0866xxxxxx</td>
-                        <td class="text-secondary italic">"Trỗi dậy từ tro tàn!"</td>
-                        <td><span class="badge bg-warning text-dark">Đang Chờ</span></td>
+
+                    <tr style="background-color: #0b0c10; transition: 0.2s;">
+                        <td class="text-danger fw-bold fs-5">07</td>
+                        <td class="text-start">
+                            <div class="d-flex align-items-center">
+                                <div class="rounded-circle bg-orange text-white d-flex align-items-center justify-content-center fw-bold me-3 shadow" style="width: 40px; height: 40px; font-size: 14px; border: 2px solid #fd7e14; background-color: #fd7e14;">PHO</div>
+                                <div>
+                                    <div class="fw-bold text-warning fs-6">Phoenix Team</div>
+                                    <small class="text-muted">ID: #242107</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="badge bg-danger px-3 py-2 shadow-sm">Free Fire</span></td>
+                        <td>
+                            <small class="text-light d-block mb-1 text-start">Sức mạnh: 65%</small>
+                            <div class="progress bg-secondary" style="height: 6px;">
+                                <div class="progress-bar bg-warning shadow-3d" style="width: 65%"></div>
+                            </div>
+                        </td>
+                        <td class="text-light-50 italic">"Trỗi dậy từ tro tàn!"</td>
+                        <td><span class="badge bg-warning text-dark px-3 py-2 w-100">Đang Hồ Sơ Sơ Tuyển</span></td>
                     </tr>
-                    <tr>
-                        <th scope="row">8</th>
-                        <td class="fw-bold text-white">Bất Bại Gaming</td>
-                        <td><span class="badge bg-primary">Liên Quân Mobile</span></td>
-                        <td>0977xxxxxx</td>
-                        <td class="text-secondary italic">"Đối thủ lớn nhất là chính mình."</td>
-                        <td><span class="badge bg-success">Đã Duyệt</span></td>
+
+                    <tr style="background-color: #0b0c10; transition: 0.2s;">
+                        <td class="text-danger fw-bold fs-5">08</td>
+                        <td class="text-start">
+                            <div class="d-flex align-items-center">
+                                <div class="rounded-circle bg-success text-white d-flex align-items-center justify-content-center fw-bold me-3 shadow" style="width: 40px; height: 40px; font-size: 14px; border: 2px solid #28a745;">BBG</div>
+                                <div>
+                                    <div class="fw-bold text-warning fs-6">Bất Bại Gaming</div>
+                                    <small class="text-muted">ID: #242108</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="badge bg-primary px-3 py-2 shadow-sm">Liên Quân Mobile</span></td>
+                        <td>
+                            <small class="text-light d-block mb-1 text-start">Sức mạnh: 87%</small>
+                            <div class="progress bg-secondary" style="height: 6px;">
+                                <div class="progress-bar bg-primary shadow-3d" style="width: 87%"></div>
+                            </div>
+                        </td>
+                        <td class="text-light-50 italic">"Đối thủ lớn nhất là chính mình."</td>
+                        <td><span class="badge bg-success text-white px-3 py-2 w-100 border border-success">Đã Duyệt Vòng 1</span></td>
                     </tr>
-                    <tr>
-                        <th scope="row">9</th>
-                        <td class="fw-bold text-white">Shadow Walkers</td>
-                        <td><span class="badge bg-info text-dark">Valorant</span></td>
-                        <td>0909xxxxxx</td>
-                        <td class="text-secondary italic">"Ẩn mình và hạ gục."</td>
-                        <td><span class="badge bg-danger">Từ Chối</span></td>
+
+                    <tr style="background-color: #0b0c10; transition: 0.2s;">
+                        <td class="text-danger fw-bold fs-5">09</td>
+                        <td class="text-start">
+                            <div class="d-flex align-items-center">
+                                <div class="rounded-circle bg-light text-dark d-flex align-items-center justify-content-center fw-bold me-3 shadow" style="width: 40px; height: 40px; font-size: 14px; border: 2px solid #6c757d;">SDW</div>
+                                <div>
+                                    <div class="fw-bold text-warning fs-6">Shadow Walkers</div>
+                                    <small class="text-muted">ID: #242109</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td><span class="badge bg-info text-dark px-3 py-2 shadow-sm">Valorant</span></td>
+                        <td>
+                            <small class="text-light d-block mb-1 text-start">Sức mạnh: 50%</small>
+                            <div class="progress bg-secondary" style="height: 6px;">
+                                <div class="progress-bar bg-secondary shadow-3d" style="width: 50%"></div>
+                            </div>
+                        </td>
+                        <td class="text-light-50 italic">"Ẩn mình và hạ gục."</td>
+                        <td><span class="badge bg-danger text-white px-3 py-2 w-100">Bị Loại (Trễ Hạn)</span></td>
                     </tr>
+
                 </tbody>
             </table>
         </div>
